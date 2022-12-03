@@ -1,7 +1,7 @@
 from sys import argv
 
 def main():
-    
+
     """
     Sample code to read inputs from the file
 
@@ -12,6 +12,12 @@ def main():
     Lines = f.readlines()
     //Add your code here to process the input commands
     """
-    
+    if len(argv) != 2:
+        raise Exception("File path not entered")
+    file_path = argv[1]
+    f = open(file_path, 'r')
+    commands = f.readlines()
+    for command in commands:
+        pass
 if __name__ == "__main__":
     main()
