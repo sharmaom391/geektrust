@@ -18,6 +18,7 @@ def main():
     f = open(file_path, 'r')
     commands = f.readlines()
     for command in commands:
+        #for loop
         pass
 if __name__ == "__main__":
     main()
